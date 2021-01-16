@@ -1,0 +1,18 @@
+{
+  "name": "zoauth",
+  "version": "1.0.0",
+  "description": "An easy to use authentication sdk and library...",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "ZoAuth"
+  ],
+  "author": "Zohan Subhash",
+  "license": "ISC"
+}
