@@ -14,5 +14,10 @@
     "ZoAuth"
   ],
   "author": "Zohan Subhash",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@azure/msal-node": "^1.0.0-beta.3",
+    "express.js": "^1.0.0",
+    "google-apis": "^1.0.0"
+  }
 }
