@@ -25,7 +25,7 @@ app = express()
 app.get('/', (req, resp) => {
     const authCodeUrlParameters = {
         scopes: ["user.read"],
-        redirectUri: "http://localhost:5210/callback",
+        redirectUri: "http://localhost:5210/callback",    
     }
     msalClient.getAuthCodeUrl(authCodeUrlParameters)
         .then(r => {resp.redirect(r)})
@@ -41,7 +41,7 @@ app.get('/callback', (req, resp) => {
     }
     msalClient.acquireTokenByCode(tokenRequest)
         .then(r => {resp.send(r)
-            msalClient.acquireTokenByRefreshToken(r.idToken)
+            msalClient.acquireTokenByRefreshToken(r)
                 .then(r => {console.log(r)})
                 .catch(err => {console.log(err)})
         })
