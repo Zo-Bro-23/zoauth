@@ -19,6 +19,7 @@
     "@azure/msal-node": "^1.0.0-beta.3",
     "express.js": "^1.0.0",
     "google-apis": "^1.0.0",
+    "nodemon": "^2.0.7",
     "query-string": "^6.13.8"
   }
 }
