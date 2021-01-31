@@ -1,6 +1,5 @@
 const getAuthUrls = require('./getAuthUrls')
-const {cred, setCredentials} = require('./setCredentials')
-
+let {cred, setCredentials} = require('./setCredentials')
 setCredentials({microsoft: {
   client_secret: '',
   client_id: '',
@@ -9,4 +8,4 @@ setCredentials({microsoft: {
   scope: []
 }})
 
-console.log(getAuthUrls('google', {}))
+ console.log(cred)

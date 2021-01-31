@@ -10,18 +10,23 @@ const querystring = require('query-string')
 
 const urls = {apple: apple, discord: discord, facebook: facebook, github: github, google: google, microsoft: microsoft}
 
-function getAuthUrl(company, options){
-const params = {
+function getAuthUrls(company, options){
+for(key in cred){
+  if(Array.isArray(cred[key].scope)){
+    cred[key].scope = cred[key].scope.join(' ')
+  }
+}
+ const params = {
 client_id: cred[company].client_id,
 cllient_secret: cred[company].client_secret,
 redirect_uri: cred[company].redirect_uri,
 scope: cred[company].scope,
 response_type: cred[company].response_type,
-}
+ }
 
 
 const final = {...params, ...options}
 return `${urls[company]}?${querystring.stringify(final)}`
 }
 
-module.exports = getAuthUrl()
+module.exports = getAuthUrls
