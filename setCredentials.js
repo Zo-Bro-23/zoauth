@@ -7,10 +7,12 @@ response_type: 'code'
 }}
 
 function setCredentials(credentials){
-  cred = credentials
+for(key in credentials){
+  cred[key] = credentials[key]
+}
 for(key in cred){
   cred[key].scope = cred[key].scope.join(' ')
 }
 }
 
-module.exports = cred
+module.exports = {cred, setCredentials}  

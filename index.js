@@ -1,5 +1,12 @@
-const object = {hey: 'hey', yo: 'yo'}
+const getAuthUrls = require('./getAuthUrls')
+const {cred, setCredentials} = require('./setCredentials')
 
-for(key in object){
-  console.log(key)
-}
+setCredentials({microsoft: {
+  client_secret: '',
+  client_id: '',
+  redirect_uri: '', 
+  response_type: '',
+  scope: []
+}})
+
+console.log(getAuthUrls('google', {}))
