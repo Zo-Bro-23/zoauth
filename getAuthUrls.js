@@ -1,22 +1,44 @@
-const {client_id, client_id_secret, scopes, redirect_uris, response_types} = require('./setCredentials')
-const amazon = "https://www.amazon.com/ap/oa"
-const aol = ""
-const autodesk = "https://developer.api.autodesk.com/authentication/v1/authorize"
-const apple = "https://appleid.apple.com/auth/authorize"
-const dailymotion = "https://www.dailymotion.com/oauth/authorize"
-const discord = "https://discord.com/api/oauth2/authorize"
-const dropbox = "https://www.dropbox.com/oauth2/authorize"
-const evernote = "https://sandbox.evernote.com/oauth"
-const fitbit  = "https://www.fitbit.com/oauth2/authorize"
-const flickr = "complex proccess"
-const formstack = "https://www.formstack.com/api/v2/oauth2/authorize"
-const github = "https://github.com/login/oauth/authorize"
-const gitlab = ""
-const goodreads = "https://www.goodreads.com/oauth/authorize"
-const google = "https://accounts.google.com/o/oauth2/v2/auth"
-const instagram = "/api.instagram.com/oauth/authorize"
-const linkedin = "https://www.linkedin.com/oauth/v2/authorization"
-const microsoft = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
-const okta = ""
-const paypal = "https://www.sandbox.paypal.com/connect"
-const reddit = "https://www.reddit.com/api/v1/authorize"
+const apple = 'https://appleid.apple.com/auth/authorize'
+const discord = 'https://discord.com/api/oauth2/authorize'
+const facebook = 'https://www.facebook.com/v9.0/dialog/oauth'
+const github = 'https://github.com/login/oauth/authorize'
+const google = 'https://accounts.google.com/o/oauth2/v2/auth'
+const microsoft = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
+const axios = require('axios')
+const {
+    cred
+} = require('./setCredentials')
+const querystring = require('query-string')
+
+const urls = {
+    apple: apple,
+    discord: discord,
+    facebook: facebook,
+    github: github,
+    google: google,
+    microsoft: microsoft
+}
+
+function getAuthUrls(company, options) {
+    for (key in cred) {
+        if (Array.isArray(cred[key].scope)) {
+            cred[key].scope = cred[key].scope.join(' ')
+        }
+    }
+    const params = {
+        client_id: cred[company].client_id,
+        cllient_secret: cred[company].client_secret,
+        redirect_uri: cred[company].redirect_uri,
+        scope: cred[company].scope,
+        response_type: cred[company].response_type,
+    }
+
+
+    const final = {
+        ...params,
+        ...options
+    }
+    return `${urls[company]}?${querystring.stringify(final)}`
+}
+
+module.exports = getAuthUrls
