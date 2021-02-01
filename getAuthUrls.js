@@ -1,16 +1,17 @@
+const amazon = 'https://www.amazon.com/ap/oa'
 const apple = 'https://appleid.apple.com/auth/authorize'
 const discord = 'https://discord.com/api/oauth2/authorize'
 const facebook = 'https://www.facebook.com/v9.0/dialog/oauth'
 const github = 'https://github.com/login/oauth/authorize'
 const google = 'https://accounts.google.com/o/oauth2/v2/auth'
 const microsoft = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
-const axios = require('axios')
 const {
     cred
 } = require('./setCredentials')
 const querystring = require('query-string')
 
 const urls = {
+    amazon: amazon,
     apple: apple,
     discord: discord,
     facebook: facebook,
@@ -27,7 +28,6 @@ function getAuthUrls(company, options) {
     }
     const params = {
         client_id: cred[company].client_id,
-        cllient_secret: cred[company].client_secret,
         redirect_uri: cred[company].redirect_uri,
         scope: cred[company].scope,
         response_type: cred[company].response_type,
