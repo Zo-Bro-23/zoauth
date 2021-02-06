@@ -1,13 +1,14 @@
+const {
+    cred
+} = require('./setCredentials')
 const amazon = 'https://www.amazon.com/ap/oa'
 const apple = 'https://appleid.apple.com/auth/authorize'
 const discord = 'https://discord.com/api/oauth2/authorize'
 const facebook = 'https://www.facebook.com/v9.0/dialog/oauth'
 const github = 'https://github.com/login/oauth/authorize'
 const google = 'https://accounts.google.com/o/oauth2/v2/auth'
-const microsoft = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
-const {
-    cred
-} = require('./setCredentials')
+let microsoft = `https://login.microsoftonline.com/${cred.microsoft.tenant}/oauth2/v2.0/authorize`
+
 const querystring = require('query-string')
 
 const urls = {
@@ -21,21 +22,22 @@ const urls = {
 }
 
 function getAuthUrls(company, options) {
+    if(company == 'microsoft'){
+        microsoft = `https://login.microsoftonline.com/${cred.microsoft.tenant}/oauth2/v2.0/authorize`
+    }
     for (key in cred) {
         if (Array.isArray(cred[key].scope)) {
             cred[key].scope = cred[key].scope.join(' ')
         }
     }
-    const params = {
+    modifiedCred = {
         client_id: cred[company].client_id,
         redirect_uri: cred[company].redirect_uri,
         scope: cred[company].scope,
         response_type: cred[company].response_type,
-    }
-
-
+            }
     const final = {
-        ...params,
+        ...modifiedCred,
         ...options
     }
     return `${urls[company]}?${querystring.stringify(final)}`
