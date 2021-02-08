@@ -1,101 +1,160 @@
-<!-- <head><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"></head> -->
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
 <style>
-
-.grad{
-  background-image: linear-gradient(to bottom right, purple, yellow);
-}
-</style>
-<body class= "grad">
-<div class="row">
-    <div class="col-md text-center">
-      <a class="btn btn-outline-dark" href="/users/google" role="button" style="text-transform:none" id= "google">
-        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png">
-        Login with Google
-      </a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md text-center">
-      <a class="btn btn-outline-dark" href="/users/facebook" role="button" style="text-transform:none" id= "facebook">
-        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Facebook sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/200px-Facebook_f_logo_%282019%29.svg.png">
-        Login with Facebook
-      </a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md text-center">
-      <a class="btn btn-outline-dark" href="/users/microsoft" role="button" style="text-transform:none" id= "microsoft">
-        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Microsoft sign-in" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAALVBMVEXyUCJ/ugAApO//uQD////yTh/zVy2EvRYWp/D/uxbyTBvzXziJvyQkq/D/viRJQpTmAAABDUlEQVR4nO3PyRHCQBAEwRHo5vDfXD1ZC5oYyHKgIqtSLev8aZtixYCEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhIQdhUuq81vCNdZjED63WDX/eoT9I+wfYf8I+0fYv9pjvYbt+4hVt1j7IDzusQgJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQn/WXgB6/1wCkBWrdwAAAAASUVORK5CYII=">
-        Login with Microsoft
-      </a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md text-center">
-      <a class="btn btn-outline-dark" href="/users/amazon" role="button" style="text-transform:none" id= "amazon">
-        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Amazon sign-in" src="https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png">
-        Login with Amazon
-      </a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md text-center">
-      <a class="btn btn-outline-dark" href="/users/github" role="button" style="text-transform:none" id= "github">
-        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="GitHub sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/62px-Font_Awesome_5_brands_github.svg.png">
-        Login with GitHub
-      </a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md text-center">
-      <a class="btn btn-outline-dark" href="/users/discord" role="button" style="text-transform:none" id= "discord">
-        <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Discord sign-in" src="data:image/jpeg;base64,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">
-        Login with Discord
-      </a>
-    </div>
-  </div>
-  </body>
-  
-  <!-- Minified CSS and JS -->
-  <link   rel="stylesheet" 
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
-          crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
-          crossorigin="anonymous"></script>
-
-          <script>
-  ids = ["google", "facebook", "microsoft", "amazon", "github", "discord"]
-  ids.forEach(i => {
-    document.cookie.split(';').forEach(r => {if(r.includes(i)){
-      document.getElementById(i).className = "btn btn-outline-dark disabled"
-}
-})})
-
-if(window.location.search.length > 0){
-  const aboutToStore = getParams(window.location.search)
-  aboutToStore.forEach(item => {
-  for(key in item){
-  document.cookie = `${key}=${item[key]}`
+  .load{
+        background-image:url('./ZoAuth\ logo\ color\ changed\ resized.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+  .afterhide{
+    background-image: linear-gradient(to bottom right,black, tomato);
+    overflow: auto;
   }
-  })
-}
+  .btn:hover{
+    background-color: thistle;
+  }
+  .btn{
+      color: black;
+      font-size: 25px;
+      }
+    p{
+      position: relative;
+      font-size: 25px;
+      color: wheat;
+      right: 25px;
+    }
+  .container{
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      margin: auto;
+  }
+  .large-container{
+      display: block;
+  }
+  #clear{
+    position: relative;
+    right: 15px;
+  }
+  </style>
+  <body class= "load" id= "body">
+      <div class= "large-container" id= "main" style= "visibility: hidden;">
+      <div class="container">
+        <a class="btn btn-outline-dark" href="/users/google" role="button" style="text-transform:none" id= "google">
+          <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="./google.png">
+          Login with Google
+        </a>
+        <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Cross" src="./cross.svg" id= "google-icon">
+<p id="google-text"></p>
+      </div>
+      <br>
+<div class="container">          
+<a class="btn btn-outline-dark" href="/users/facebook" role="button" style="text-transform:none" id= "facebook">
+          <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Facebook sign-in" src="./facebook.png">
+          Login with Facebook
+        </a>
+        <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Cross" src="./cross.svg" id= "facebook-icon">
+        <p id="facebook-text"></p>
+      </div>
+      <br>
+<div class="container">
+  <a class="btn btn-outline-dark" href="/users/microsoft" role="button" style="text-transform:none" id= "microsoft">
+          <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Microsoft sign-in" src="./microsoft.png">
+          Login with Microsoft
+        </a>
+        <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Cross" src="./cross.svg" id= "microsoft-icon">
+        <p id="microsoft-text"></p>
+      </div>
+<br>
+<div class="container">
+        <a class="btn btn-outline-dark" href="/users/amazon" role="button" style="text-transform:none" id= "amazon">
+          <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Amazon sign-in" src="./amazon.png">
+          Login with Amazon
+        </a>
+        <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Cross" src="./cross.svg" id= "amazon-icon">
+        <p id="amazon-text"></p>
+      </div>   
+<br> 
+<div class="container">
+  <a class="btn btn-outline-dark" href="/users/github" role="button" style="text-transform:none" id= "github">
+          <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Gtihub sign-in" src="./github.png">
+          Login with GitHub
+        </a>
+        <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Cross" src="./cross.svg" id= "github-icon">
+        <p id="github-text"></p>
+      </div>
+<br>
+<div class="container">
+  <a class="btn btn-outline-dark" href="/users/discord" role="button" style="text-transform:none" id= "discord">
+          <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Discord sign-in" src="./discord.jpg">
+          Login with Discord
+        </a>
+        <img width="50px" style="margin-bottom:3px; margin-right:5px" alt="Cross" src="./cross.svg" id= "discord-icon">
+        <p id="discord-text"></p>
+      </div>
+    <br>
+    <div class= "container">
+    <button id= "clear" onclick= "removecookies()"" class= "btn btn-primary">Clear all</button>
+  </div>
+  </div>  
+  </body>    
+    <!-- Minified CSS and JS -->
+  
+            <script>
+                if(document.cookie.length <= 0){
+                  document.getElementById('clear').className = "btn disabled"
+                }
+    ids = ["google", "facebook", "microsoft", "amazon", "github", "discord"]
+    ids.forEach(i => {
+      document.cookie.split(';').forEach(r => {if(r.includes(i)){
+        document.getElementById(i).className = "btn btn-outline-dark disabled"
+        document.getElementById(i + '-icon').src = "./tick.svg"
+        document.getElementById(i + "-text").innerHTML = `Signed in as: ${decodeURIComponent(r.split('=')[1])}`
+  }
+  })})
+  
+  if(window.location.search.length > 0){
+    const aboutToStore = getParams(window.location.search)
+    aboutToStore.forEach(item => {
+    for(key in item){
+    document.cookie = `${key}=${item[key]}`
+    }
+    })
+    window.location.replace('http://localhost:5210')
+  }
+  
+  function getParams(string){
+    const sliced = string.slice(1)
+    const seperated = sliced.split('&')
+    const final = []
+    seperated.forEach(i => {
+      const r = i.split('=')
+      final.push({[r[0]]: r[1]})
+    })
+    return final
+  }
+  </script>
+  <script>
+      function removecookies(){
+          var r = confirm('Are you sure you want to clear all cookies?')
+          if(r){
+          document.cookie.split(';').forEach((item) => {
+              document.cookie = `${item.split('=')[0]}= ; expires = Thu, 01 Jan 1970 00:00:00 GMT`
+          })
+          window.location.reload()
+      }
+      }
+  </script>
 
-function getParams(string){
-  const sliced = string.slice(1)
-  const seperated = sliced.split('&')
-  const final = []
-  seperated.forEach(i => {
-    const r = i.split('=')
-    final.push({[r[0]]: r[1]})
-  })
-  return final
-}
-alert(document.cookie)
-</script>
+  <script>
+    setTimeout(() => {
+      document.getElementById('body').className = "afterHide";
+      document.getElementById('main').style.visibility = "visible"
+    }, 1500)
+  </script>

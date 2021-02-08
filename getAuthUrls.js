@@ -13,7 +13,6 @@ const querystring = require('query-string')
 
 const urls = {
     amazon: amazon,
-    apple: apple,
     discord: discord,
     facebook: facebook,
     github: github,
@@ -24,6 +23,9 @@ const urls = {
 function getAuthUrls(company, options) {
     if(company == 'microsoft'){
         microsoft = `https://login.microsoftonline.com/${cred.microsoft.tenant}/oauth2/v2.0/authorize`
+    }
+    if(urls[company] == undefined){
+        throw `Err!! ${company.charAt(0).toUpperCase() + company.slice(1)} isn't a valid company dumbass! If it is a valid company instead, pls visit https://github.com/Zo-Bro-23/zoauth/issues/new to give us feedback on which OAuth services to incooperate in the next update.`
     }
     for (key in cred) {
         if (Array.isArray(cred[key].scope)) {

@@ -1,6 +1,7 @@
 const getTokenOriginal = require('./getToken')
-const getAuthUrlOriginal = require('./getAuthUrls')
 const getAuthUrlsOriginal = require('./getAuthUrls')
+const getDetailsOriginal = require('./getDetails')
+const setCredentialsOriginal = require('./setCredentials').setCredentials
 
 function getToken(options, config){
     return getTokenOriginal('github', options, config)
@@ -10,4 +11,12 @@ function getAuthUrl(options){
     return getAuthUrlsOriginal('github', options)
 }
 
-module.exports = {getToken, getAuthUrl}
+function getDetails(options, config){
+    return getDetailsOriginal('github', options, config)
+}
+
+function setCredentials(cred){
+    return setCredentialsOriginal({github: cred})
+}
+
+module.exports = {getToken, getAuthUrl, getDetails}
