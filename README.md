@@ -46,7 +46,7 @@ And how did you like ***that***, huh? I'm not gonna spoil the surprise for you. 
 
 Saw it? Ok, so I've been obsessed about ASCII art for around a week now. From when I was a kid, I **loved** it. It never occured to me to try making it. I always wanted to live it to the experts. But then I realised a few days back that there would be websites that do this. And there was. Damn good sites. Check this out.
 
-<img src= "./readme_files/logo.jpg">
+<img src= "./readme_files/logo.jpg" width= "512px">
 
 Neat huh? Can you even **believe** that it's ASCII and not just a drawing? Ok, sorry! I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And **don't** ask me why I chose that port. It's a goddamn lucky number, man! Like the UI? Here's a photo for the noobs who can't write two lines of code.
 
