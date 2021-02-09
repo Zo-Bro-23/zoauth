@@ -1,2 +1,3 @@
-# zoauth
+# ZoAuth
 ZoAuth is an easy to use authentication sdk and library...
+And t

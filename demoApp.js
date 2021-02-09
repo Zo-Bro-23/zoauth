@@ -4,9 +4,10 @@ const queryString = require('query-string')
 const getAuthUrl = require('./getAuthUrls')
 const getToken = require('./getToken')
 const getDetails = require('./getDetails')
+async function demoApp(){
 app.use('/', express.static(`${__dirname}/files/`))
 app.get('/', (req, resp) => {
-    resp.sendFile('index.html', {root: "."})
+    resp.sendFile('index.html', {root: __dirname})
 })
 
 app.get('/users/google', (req, resp) => {
@@ -138,3 +139,6 @@ setTimeout(() => {
     console.log('Welcome to ZoAuth!!')
     console.log('Visit http://localhost:5210 on your favourite browser(probably Chrome) to see your new demo app in action! Yours sincierly, the ZoAuth team!')
 }, 250)})
+}
+
+module.exports = demoApp
