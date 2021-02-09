@@ -1,5 +1,3 @@
-**ZoAuth** is hereby licensed by **Zohan Subhash** using the GPL-3 license.
-
 ### GNU GENERAL PUBLIC LICENSE
 
 Version 3, 29 June 2007
