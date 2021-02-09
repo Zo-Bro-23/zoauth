@@ -48,7 +48,7 @@ Saw it? Ok, so I've been obsessed about ASCII art for around a week now. From wh
 
 <img src= "./readme_files/logo.jpg">
 
-Neat huh? Ok, sorry! I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And **don't** ask me why I chose that port. It's a goddamn lucky number, man! Like the UI? Here's a photo for the noobs who can't write two lines of code.
+Neat huh? Can you even **believe** that it's ASCII and not just a drawing? Ok, sorry! I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And **don't** ask me why I chose that port. It's a goddamn lucky number, man! Like the UI? Here's a photo for the noobs who can't write two lines of code.
 
 <img src= "./readme_files/screenshot.png">
 
