@@ -1,6 +1,7 @@
 # ZoAuth
 Copyright (C) 2021  **Zohan Subhash**
 
+**This program is licensed under the GPL Public License.**
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
