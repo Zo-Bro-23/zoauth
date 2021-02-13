@@ -2,7 +2,7 @@
 
 <img src= "https://zoauth.tk/ZoAuth%20logo%20color%20changed%20resized.jpg">
 
-<a href= "https://www.npmjs.com/package/zoauth"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/800px-Npm-logo.svg.png"></a>
+<a href= "https://www.npmjs.com/package/zoauth"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/800px-Npm-logo.svg.png" width= "100px"></a>
 
 <a href= ""><img src= "https://img.shields.io/badge/Build-Stable-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Coverage-100%25%0A-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Dependencies-Express%2C%20Axios%2C%20NodeMon%2C%20QueryString-blue"></a>  <a href= "https://www.npmjs.com/package/zoauth"><img src= "https://img.shields.io/badge/NPM-v14%2E15%2E4-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Downloads-Enough%20for%20you%20to%20be%20happy-blue"></a>  <a href= "https://github.com/Zo-Bro-23/zoauth/discussions/"> <img src= "https://img.shields.io/badge/Social%20media-GitHub%20Discussions-blue?logo=github"></a>
 
