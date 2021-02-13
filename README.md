@@ -79,7 +79,7 @@ app.get('/callback/google', (req, resp) => {
         .then(response => {
             zoauth.google.getDetails(response)
                 .then(res => {
-                    resp.send(res)
+                    resp.send(res.name)
                     })
         })
 })
@@ -96,7 +96,11 @@ app.listen(5210, () => {console.log(`
 `)})
 ```
 
-Want the full reference list of all the possible functions so that you can exploit me to the core? Here we go...
+Go to ```http://localhost:5210``` and try logging in with Google. Don't know your password? Never mind. Click ```forgot password```. Wait, what?? You don't know the answer to *any* of your security questions? How is that possible???
+
+<img src= "./readme_files/meme-login-oauth-version.png">
+
+Ok. Now **do** you want the full reference list of all the possible functions so that you can exploit me to the core? Here we go...
 
 ## API reference
 
@@ -297,8 +301,16 @@ zoauth === {
 
 #### zoauth.company.function()
 
-```
-```
-
 ##### ```company: required```
 ##### ```function: required```
+
+## Supported companies
+
+### Amazon
+### Discord
+### Facebook
+### Google
+### GitHub
+### Microsoft
+
+But don't worry. I'm planning to add a new company **every** week! So this list should start growing in no time at all! But what about Apple? Some of you with the iPhones might ask. Well, **THEY GODDAMN CHARGE A HUNDRED BUCKS A MONTH!!!** And they're **so** condescending! I went to thier developer page and they were like, "Go make iPhones apps first, before trying to do OAuth." I, swear! But, yeah. I too am disappointed that I couldn't include Apple. Anyways, it was nice meeting you and I hope I'll be able to help you in some way or other in the future. Like I said, feel obliged to report any bugs or issues and I'll try to get them fixed as soon as possible. PS: Unless my mom bans coding for some time.
