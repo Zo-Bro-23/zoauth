@@ -56,7 +56,7 @@ Saw it? Ok, so I've been obsessed about ASCII art for around a week now. From wh
 
 <img src= "./readme_files/logo.jpg" width= "512px">
 
-Neat huh? Can you even **believe** that it's ASCII and not just a drawing? I literally **love** the black background! It signifies *class*. Of course, if you were my dad or if you were from the 1800's, you wouldn't like it. I don't know. I'm just ***so*** used to the dark theme. By the way, you should try out the ```Night owl``` theme on ```VS Code```. It's genuinely ***awesome***. Ok, sorry. I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And **don't** ask me why I chose that port. It's a goddamn lucky number, man! Yeah anyway, check out the demo app. Like the UI? Here's a photo for the noobs who can't write two lines of code.
+Neat huh? Can you even **believe** that it's ASCII and not just a drawing? I literally **love** the black background! It signifies *class*. Of course, if you were my dad or if you were from the 1800's, you wouldn't like it. I don't know. I'm just ***so*** used to the dark theme. By the way, you should try out the ```Night owl``` theme on ```VS Code```. It's genuinely ***awesome***. Thought I should give them some credit. Ok, sorry. I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And **don't** ask me why I chose that port. It's a goddamn lucky number, man! Yeah anyway, check out the demo app. Like the UI? Here's a photo for the noobs who can't write two lines of code.
 
 <img src= "./readme_files/screenshot.png">
 
@@ -287,9 +287,15 @@ zoauth === {
 
 #### zoauth.expressApp
 
+###### ``` ```
+
 #### zoauth.demoApp()
 
+###### ``` ```
+
 #### zoauth.company.function()
+
+###### ``` ```
 
 ##### ```company: required```
 ##### ```function: required```
