@@ -284,4 +284,12 @@ zoauth === {
 ##### ``` resolve: required```
 ##### ``` reject: optional (Note: If an error occurs, unhandled promise rejection will be called)```
 ##### ``` port: optional```
-##### *hi* ```hi```
+
+#### zoauth.expressApp
+
+#### zoauth.demoApp()
+
+#### zoauth.company.function
+
+##### ```company: required```
+##### ```function: required```
