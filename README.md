@@ -3,7 +3,7 @@
 
 Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and **I** am the sole person behind the whole [ZoAuth](https://zoauth.tk) project. Here's a photo of me:
 
-<img src= "./readme_files/My\ pic.jpg" height= "512px">
+<img src= "./readme_files/My%20pic.jpg" height= "512px">
 
 Now that we have established who I am, let's get started...
 
@@ -104,7 +104,7 @@ Want the full reference list of all the possible functions so that you can explo
 
 #### zoauth.setCredentials(cred)
 
-**returns null**
+**```returns null```**
 
 Pass on a ```cred``` JSON object with the credentials in the form of 
 ```javascript
@@ -119,31 +119,31 @@ company2: {
 
 #### zoauth.getAuthUrl(company, options)
 
-**returns ```String```**
+**```returns String```**
 
 Get the auth url for a ```company``` string parameter with optional ```options``` to add on to the request body. All the ```options``` will get added on as query parameters. See [company list](#supported-companies)
 
 #### zoauth.getToken(company, params, config)
 
-**returns ```Promise```**
+**```returns Promise```**
 
 Get the ```access_token```, ```refresh_token```, etc. for a ```company``` string parameter along with the ```code``` and other details in the ```params``` object. Extra axios configuration can be added on with the ```config``` parameter. See [company list](#supported-companies)
 
 #### zoauth.getDetails(company, options, config)
 
-**returns ```Promise```**
+**```returns Promise```**
 
 Same as the ```getToken()```, except that instead of the ```code```, you'll be passing on the tokens. Just pass on the whole object man, nobody really cares. All we want is the ```access_token``` though. Add extra configuration through the ```config``` parameter. See [company list](#supported-companies)
 
 #### zoauth.getApi(url, options, config, except)
 
-**returns ```Promise```**
+**```returns Promise```**
 
 Pass on a ```url``` with the authorization tokens inside the ```options``` object, and we'll call that API endpoint with the necessary ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [company list](#supported-companies)
 
 #### zoauth.postApi(url, data, options, config, except)
 
-**returns ```Promise```**
+**```returns Promise```**
 
 Same thing. We'll call the ```url``` with the ```data``` along with authorization tokens from ```options```, with the ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [company list](#supported-companies)
 
@@ -151,7 +151,7 @@ Now come the fun ones...
 
 #### zoauth.runAuthServer(resolve, reject, port)
 
-**returns ```null```**
+**```returns null```**
 
 Runs a auth server with literally **all** supported companies. It calls the ```resolve``` callback function after the whole auth process. You'll receive the following JSON object as a parameter for this callback function ```r => {console.log(resp)}```:
 
@@ -170,19 +170,19 @@ If you provide an optional ```reject``` callback function, you'll get a similar 
 
 #### zoauth.expressApp
 
-**returns ```Object```**
+**```returns Object```**
 
 If you want to add extra endpoints to the already running ```authServer```, then you can do ```zoauth.expressApp.get([...])``` instead of ```app.get([...])``` to prevent the ```Port already busy``` error.
 
 #### zoauth.demoApp()
 
-**returns ```null```**
+**```returns null```**
 
 That one's easy. Runs the demo app at ```http://localhost:5210```. And don't worry. It doesn't take up any space in the package. Chill, man. I'm definitely ***so*** **not** abusing your broadband whenever you do ```npm i zoauth```. The file just takes up like 8KB. I think I understood why I included this function — so that I can show you the ASCII art. The function just redirects you to the real demo app, which is hosted at [https://demo.zoauth.tk](https://demo.zoauth.tk)
 
 #### zoauth.company.function
 
-**returns ```null``` for ```setCredentials```, ```String``` for ```getAuthUrl```, and ```Promise``` for ```getTken``` and ```getDetails```**
+**```returns null``` for ```setCredentials```, ```String``` for ```getAuthUrl```, and ```Promise``` for ```getTken``` and ```getDetails```**
 
 This is a different function structure just in case you like it better. Replace ```company``` with the disired company, and replace ```function``` with any one of these four functions:
 
@@ -289,7 +289,7 @@ zoauth === {
 
 #### zoauth.demoApp()
 
-#### zoauth.company.function
+#### zoauth.company.function()
 
 ##### ```company: required```
 ##### ```function: required```
