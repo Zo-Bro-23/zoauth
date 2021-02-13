@@ -190,31 +190,31 @@ company2: {
 
 ***```returns String```***
 
-Get the auth url for a ```company``` string parameter with optional ```options``` to add on to the request body. All the ```options``` will get added on as query parameters. See [company list](#supported-companies)
+Get the auth url for a ```company``` string parameter with optional ```options``` to add on to the request body. All the ```options``` will get added on as query parameters. See [list](#supported-companies) of supported OAuth  providers.
 
 #### zoauth.getToken(company, params, config)
 
 ***```returns Promise```***
 
-Get the ```access_token```, ```refresh_token```, etc. for a ```company``` string parameter along with the ```code``` and other details in the ```params``` object. Extra axios configuration can be added on with the ```config``` parameter. See [company list](#supported-companies)
+Get the ```access_token```, ```refresh_token```, etc. for a ```company``` string parameter along with the ```code``` and other details in the ```params``` object. Extra axios configuration can be added on with the ```config``` parameter. See [list](#supported-companies) of supported OAuth  providers.
 
 #### zoauth.getDetails(company, options, config)
 
 ***```returns Promise```***
 
-Same as the ```getToken()```, except that instead of the ```code```, you'll be passing on the tokens. Just pass on the whole object man, nobody really cares. All we want is the ```access_token``` though. Add extra configuration through the ```config``` parameter. See [company list](#supported-companies)
+Same as the ```getToken()```, except that instead of the ```code```, you'll be passing on the tokens. Just pass on the whole object man, nobody really cares. All we want is the ```access_token``` though. Add extra configuration through the ```config``` parameter. See [list](#supported-companies) of supported OAuth  providers.
 
 #### zoauth.getApi(url, options, config, except)
 
 ***```returns Promise```***
 
-Pass on a ```url``` with the authorization tokens inside the ```options``` object, and we'll call that API endpoint with the necessary ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [company list](#supported-companies)
+Pass on a ```url``` with the authorization tokens inside the ```options``` object, and we'll call that API endpoint with the necessary ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [list](#supported-companies) of supported OAuth  providers.
 
 #### zoauth.postApi(url, data, options, config, except)
 
 ***```returns Promise```***
 
-Same thing. We'll call the ```url``` with the ```data``` along with authorization tokens from ```options```, with the ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [company list](#supported-companies)
+Same thing. We'll call the ```url``` with the ```data``` along with authorization tokens from ```options```, with the ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [list](#supported-companies) of supported OAuth  providers.
 
 Now come the fun ones...
 
@@ -235,7 +235,7 @@ resp: {
 
 If you provide an optional ```reject``` callback function, you'll get a similar object in that function if something goes wrong. The ```data``` object will then contain the ```error``` message along with the ```error_description```. Note: The values inside the ```data``` object may vary according to the company. You can also optionally specify the port After running the server,
 
-```http://localhost:5210/company``` redirects the user to the ```company```'s OAuth page and ```http://localhost:5210/callback/company``` takes the token from the ```company```'s page and calls the callback with the received data. See [company list](#supported-companies)
+```http://localhost:5210/company``` redirects the user to the ```company```'s OAuth page and ```http://localhost:5210/callback/company``` takes the token from the ```company```'s page and calls the callback with the received data. See [list](#supported-companies) of supported OAuth  providers.
 
 #### zoauth.expressApp
 
