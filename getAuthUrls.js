@@ -21,10 +21,10 @@ const urls = {
 }
 
 function getAuthUrls(company, options) {
-    if(company == 'microsoft'){
+    if (company == 'microsoft') {
         microsoft = `https://login.microsoftonline.com/${cred.microsoft.tenant}/oauth2/v2.0/authorize`
     }
-    if(urls[company] == undefined){
+    if (urls[company] == undefined) {
         throw `Err!! ${company.charAt(0).toUpperCase() + company.slice(1)} isn't a valid company dumbass! If it is a valid company instead, pls visit https://github.com/Zo-Bro-23/zoauth/issues/new to give us feedback on which OAuth services to incooperate in the next update.`
     }
     for (key in cred) {
@@ -37,7 +37,7 @@ function getAuthUrls(company, options) {
         redirect_uri: cred[company].redirect_uri,
         scope: cred[company].scope,
         response_type: cred[company].response_type,
-            }
+    }
     const final = {
         ...modifiedCred,
         ...options

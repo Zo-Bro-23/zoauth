@@ -1,6 +1,6 @@
 {
   "name": "zoauth",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "An easy to use authentication module... I swear, two lines of code and you're done.",
   "main": "index.js",
   "homepage": "https://github.com/Zo-Bro-23/zoauth#readme",
