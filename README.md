@@ -1,6 +1,6 @@
 # ZoAuth
 
-<img src= "./readme_files/ZoAuth%20logo%20color%20changed%20resized.jpg">
+<img src= "https://lh3.googleusercontent.com/q3h-V3-wDhUWKtBAI8zs1LxXfg8F3P9L0ZKl3ykPWbqtkfn5F0clzQjsmrcEq1PmxHpxE-FnsRdtPJbavxHFycuf8t2cIZxVFEwZu0xNGWBomPZNITdfioaAhZL95M5ZG8jKyNs0mIgN3ArtKnPFjeYqGiK0dfRxd8iRDfnKDvj7zeY4sDQ3kPa6-QC_4XXvMROfchKkbxybOx4g5FZXkDZgl1wtiV9jYriBLJukvCd1GXIalrlzldl50kBKWnpxI4xoMNg44vIey2NWg6aUDRVXRRPBUlkAxAlQAPJO1QadiEUCzQBYNmUYAqXiRbQsdMJMh-ohYeJ7pYjbGi_H9qpbeGugzjyinkFhS-rQ7_WNewgO7j5th7pxWMUHNT7EfteMI0_hJtrEU-0HtZv2HDv0I-8ItN1atoB4m2_OW6-HeOta7CbY6paNMoyIAYfMo2L5USefHgJTHfWSfmbW4dLDaKSvmmVKs1S599Qqahc8UTjK98-mP592V-lRSiNOO9o-4FsYPPyrIwzHHcmwlBS62GJhdottZRD3PK--MVs2SfzBiAmFLo6fdksSW6HWYl4bqBjAvfOsw8d8JCpMBzPBAx5pJQJp0fsEi2jsM6bIcIkT1eRM4GHHoQaNst49bA7NXGWhYbgrn1fXhVa0wwoJZMD_6Sd6CdFhRI4f2cFgMDd09UkEd3_Rr49bEw=w493-h278-no?authuser=0">
 
 <img src= "https://img.shields.io/badge/Build-Stable-blue">  <img src= "https://img.shields.io/badge/Coverage-100%25%0A-blue">  <img src= "https://img.shields.io/badge/Dependencies-Express%2C%20Axios%2C%20NodeMon%2C%20QueryString-blue">  <img src= "https://img.shields.io/badge/NPM-v14%2E15%2E4-blue">  <img src= "https://img.shields.io/badge/Downloads-Enough%20for%20you%20to%20be%20happy-blue">  <img src= "https://img.shields.io/badge/Social%20media-GitHub%20Discussions-blue?logo=github&link=https%3A%2F%2Fgithub.com%2FZo-Bro-23%2Fzoauth%2Fdiscussions">
 
