@@ -287,15 +287,18 @@ zoauth === {
 
 #### zoauth.expressApp
 
-###### ``` ```
+###### ```
+```
 
 #### zoauth.demoApp()
 
-###### ``` ```
+###### ```
+```
 
 #### zoauth.company.function()
 
-###### ``` ```
+###### ```
+```
 
 ##### ```company: required```
 ##### ```function: required```
