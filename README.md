@@ -119,31 +119,31 @@ company2: {
 
 #### zoauth.getAuthUrl(company, options)
 
-**returns String**
+**returns ```String```**
 
 Get the auth url for a ```company``` string parameter with optional ```options``` to add on to the request body. All the ```options``` will get added on as query parameters. See [company list](#supported-companies)
 
 #### zoauth.getToken(company, params, config)
 
-**returns Promise**
+**returns ```Promise```**
 
 Get the ```access_token```, ```refresh_token```, etc. for a ```company``` string parameter along with the ```code``` and other details in the ```params``` object. Extra axios configuration can be added on with the ```config``` parameter. See [company list](#supported-companies)
 
 #### zoauth.getDetails(company, options, config)
 
-**returns Promise**
+**returns ```Promise```**
 
 Same as the ```getToken()```, except that instead of the ```code```, you'll be passing on the tokens. Just pass on the whole object man, nobody really cares. All we want is the ```access_token``` though. Add extra configuration through the ```config``` parameter. See [company list](#supported-companies)
 
 #### zoauth.getApi(url, options, config, except)
 
-**returns Promise**
+**returns ```Promise```**
 
 Pass on a ```url``` with the authorization tokens inside the ```options``` object, and we'll call that API endpoint with the necessary ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [company list](#supported-companies)
 
 #### zoauth.postApi(url, data, options, config, except)
 
-**returns Promise**
+**returns ```Promise```**
 
 Same thing. We'll call the ```url``` with the ```data``` along with authorization tokens from ```options```, with the ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token. See [company list](#supported-companies)
 
@@ -151,7 +151,7 @@ Now come the fun ones...
 
 #### zoauth.runAuthServer(resolve, reject, port)
 
-**returns null**
+**returns ```null```**
 
 Runs a auth server with literally **all** supported companies. It calls the ```resolve``` callback function after the whole auth process. You'll receive the following JSON object as a parameter for this callback function ```r => {console.log(resp)}```:
 
@@ -166,17 +166,17 @@ resp: {
 
 If you provide an optional ```reject``` callback function, you'll get a similar object in that function if something goes wrong. The ```data``` object will then contain the ```error``` message along with the ```error_description```. Note: The values inside the ```data``` object may vary according to the company. You can also optionally specify the port After running the server,
 
-```http://localhost:5210/*company*``` redirects the user to the ```company```'s OAuth page and ```http://localhost:5210/callback/*company*``` takes the token from the ```company```'s page and calls the callback with the received data. See [company list](#supported-companies)
+```http://localhost:5210/company``` redirects the user to the ```company```'s OAuth page and ```http://localhost:5210/callback/company``` takes the token from the ```company```'s page and calls the callback with the received data. See [company list](#supported-companies)
 
 #### zoauth.expressApp
 
-**returns Object**
+**returns ```Object```**
 
 If you want to add extra endpoints to the already running ```authServer```, then you can do ```zoauth.expressApp.get([...])``` instead of ```app.get([...])``` to prevent the ```Port already busy``` error.
 
 #### zoauth.demoApp()
 
-**returns null**
+**returns ```null```**
 
 That one's easy. Runs the demo app at ```http://localhost:5210```. And don't worry. It doesn't take up any space in the package. Chill, man. I'm definitely ***so*** **not** abusing your broadband whenever you do ```npm i zoauth```. The file just takes up like 8KB. I think I understood why I included this function — so that I can show you the ASCII art. The function just redirects you to the real demo app, which is hosted at [https://demo.zoauth.tk](https://demo.zoauth.tk)
 
@@ -186,10 +186,10 @@ That one's easy. Runs the demo app at ```http://localhost:5210```. And don't wor
 
 This is a different function structure just in case you like it better. Replace ```company``` with the disired company, and replace ```function``` with any one of these four functions:
 
--setCredentials()
--getAuthUrl()
--getToken()
--getDetails()
+##### -setCredentials()
+##### -getAuthUrl()
+##### -getToken()
+##### -getDetails()
 
 ### Module presented as a JSON object
 
@@ -251,36 +251,37 @@ zoauth === {
 
 #### zoauth.setCredentials(cred)
 
-##### cred: required
+```##### cred: required```
 
 #### zoauth.getAuthUrl(company, options)
 
-##### company: required
-##### options: optional
+```##### company: required```
+```##### options: optional```
 
 #### zoauth.getDetails(company, options, config)
 
-##### company: required
-##### options: required
-##### config: optional
+```##### company: required```
+```##### options: required```
+```##### config: optional```
 
 #### zoauth.getApi(url, options, config, except)
 
-##### url: required
-##### options: required, unless except is truthy
-##### config: optional
-##### except: optional, unless options.access_token is not specified
+```##### url: required```
+```##### options: required, unless except is truthy```
+```##### config: optional```
+```##### except: optional, unless options.access_token is not specified```
 
 #### zoauth.postApi(url, data, options, config, except)
 
-##### url: required
-##### data: required
-##### options: required, unless except is truthy
-##### config: optional
-##### except: optional, unless options.access_token is not specified
+```##### url: required```
+```##### data: required```
+```##### options: required, unless except is truthy```
+```##### config: optional```
+```##### except: optional, unless options.access_token is not specified```
 
 #### zoauth.runAuthServer(resolve, reject, port)
 
-##### resolve: required
-##### reject: optional (Note: If an error occurs, unhandled promise rejection will be called)
+```##### resolve: required```
+```##### reject: optional (Note: If an error occurs, unhandled promise rejection will be called)```
+```##### port: optional```
 ##### *hi* ```hi```
