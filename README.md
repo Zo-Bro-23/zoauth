@@ -1,6 +1,6 @@
 # ZoAuth
 
-<img src= "https://lh3.googleusercontent.com/q3h-V3-wDhUWKtBAI8zs1LxXfg8F3P9L0ZKl3ykPWbqtkfn5F0clzQjsmrcEq1PmxHpxE-FnsRdtPJbavxHFycuf8t2cIZxVFEwZu0xNGWBomPZNITdfioaAhZL95M5ZG8jKyNs0mIgN3ArtKnPFjeYqGiK0dfRxd8iRDfnKDvj7zeY4sDQ3kPa6-QC_4XXvMROfchKkbxybOx4g5FZXkDZgl1wtiV9jYriBLJukvCd1GXIalrlzldl50kBKWnpxI4xoMNg44vIey2NWg6aUDRVXRRPBUlkAxAlQAPJO1QadiEUCzQBYNmUYAqXiRbQsdMJMh-ohYeJ7pYjbGi_H9qpbeGugzjyinkFhS-rQ7_WNewgO7j5th7pxWMUHNT7EfteMI0_hJtrEU-0HtZv2HDv0I-8ItN1atoB4m2_OW6-HeOta7CbY6paNMoyIAYfMo2L5USefHgJTHfWSfmbW4dLDaKSvmmVKs1S599Qqahc8UTjK98-mP592V-lRSiNOO9o-4FsYPPyrIwzHHcmwlBS62GJhdottZRD3PK--MVs2SfzBiAmFLo6fdksSW6HWYl4bqBjAvfOsw8d8JCpMBzPBAx5pJQJp0fsEi2jsM6bIcIkT1eRM4GHHoQaNst49bA7NXGWhYbgrn1fXhVa0wwoJZMD_6Sd6CdFhRI4f2cFgMDd09UkEd3_Rr49bEw=w493-h278-no?authuser=0" width= "100%">
+<img src= "https://zoauth.tkZoAuth%20logo%20color%20changed%20resized.jpg">
 
 <img src= "https://img.shields.io/badge/Build-Stable-blue">  <img src= "https://img.shields.io/badge/Coverage-100%25%0A-blue">  <img src= "https://img.shields.io/badge/Dependencies-Express%2C%20Axios%2C%20NodeMon%2C%20QueryString-blue">  <img src= "https://img.shields.io/badge/NPM-v14%2E15%2E4-blue">  <img src= "https://img.shields.io/badge/Downloads-Enough%20for%20you%20to%20be%20happy-blue">  <img src= "https://img.shields.io/badge/Social%20media-GitHub%20Discussions-blue?logo=github&link=https%3A%2F%2Fgithub.com%2FZo-Bro-23%2Fzoauth%2Fdiscussions">
 
@@ -66,7 +66,7 @@
 
 Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.tk) project. Here's a photo of me:
 
-<img src= "https://lh3.googleusercontent.com/tLjWdVD_tfpQs5MjewvWpdqYWqFb6bp969B6IPko4hU9m4MSppLkwdEQhwwyb6IzCcFqU2AYiQlf1pq-5UKSAXlZzrrneR5WOP895a9R_fEfJ1wrkJcUow93Gt8VLM4wImULKfHy3J-j4LtJUvvai1k7YYmOKvTch6KsuUBlssSF2w2bVdwPUq_DptVrccg7mNTs18SB4LMfcGK-1987qRg2LO4b7F80lmCI7YZTFYDXkPmbALXWnkWZShPZGOnzd1nleJL2RCDTjMqplAqegX1HiQz59WrcmuBzdgEt6FJt6mD40tKjJiLLrzx0vb-u2wtH1KKOdErG5HhKgKmGOaG-i-oAY3yVJjKMHYa1KjxpqFErM_oHssRKXFUojjrp9BH0p4a1hDRQB4IxV5hPh3jtddbWwDL0snjlwiR7vIjhR1g44PnLXgbfH5lOWhLf18Fo0Mh6pRw6T6jjWrxuZ41cBNwFFDTctAsJFsEZWvkpD3B7cX-Y_fL2QbPX6B_uUorcjtE7xjBqip28UiZZ9lkEhyE30iVntyZ2g4w6mTBgSkTDMGVikMGUXD5xHsfeg_xKcYVH8s9R4wzeNFtK3p6DC8AWznQWEh4MtRfXFiJHFwyi3GF4DtBMvbqMv4fRPDCUpDNezdNfNYCNM54yB43XdJDdwBSvzimkPEA23yFVlxpqsJ7soqmg3XFSDw=w508-h404-no?authuser=0" height= "512px">
+<img src= "./readme_files/My%20pic.jpg" height= "512px">
 
 Now that we have established who I am, let's get started...
 
