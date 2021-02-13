@@ -182,7 +182,7 @@ That one's easy. Runs the demo app at ```http://localhost:5210```. And don't wor
 
 #### zoauth.company.function
 
-**returns ```null``` for ```setCredentials```, ```String``` for ```getAuthUrl```, and ```Promise``` for ```getTken``` and ```getDetails```
+**returns ```null``` for ```setCredentials```, ```String``` for ```getAuthUrl```, and ```Promise``` for ```getTken``` and ```getDetails```**
 
 This is a different function structure just in case you like it better. Replace ```company``` with the disired company, and replace ```function``` with any one of these four functions:
 
