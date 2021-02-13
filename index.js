@@ -8,8 +8,10 @@ const facebook = require('./facebook')
 const github = require('./github')
 const google = require('./google')
 const microsoft = require('./microsoft')
-const demoApp = require('./demoApp')
+const {runAuthServer} = require('./runAuthServer')
+const {expressApp} = require('./runAuthServer')
 const getApi = require('./getApi')
 const postApi = require('./postApi')
+const demoApp = require('./demoApp')
 
-module.exports = {getAuthUrl, getToken, getDetails, setCredentials, amazon, discord, facebook, github, google, microsoft, demoApp, getApi, postApi}
+module.exports = {getAuthUrl, getToken, getDetails, setCredentials, amazon, discord, facebook, github, google, microsoft, runAuthServer, getApi, postApi, demoApp, expressApp}

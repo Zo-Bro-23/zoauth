@@ -1,6 +1,14 @@
 const axios = require('axios')
 
-function getApi(url, options, config){
+function getApi(url, options, config, except){
+    if(url == undefined){
+        throw `Err!! You need to gimme a valid url genius!`
+    }
+    if(!except){
+    if(options.access_token == undefined){
+        throw `Err!! Gimme an access token genius!`
+    }
+}
     const defaultOptions = {token_type: "Bearer"}
     const final = {...defaultOptions, ...options}
     return new Promise((resolve, reject) => {

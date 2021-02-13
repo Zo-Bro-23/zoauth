@@ -19,4 +19,4 @@ function setCredentials(cred){
     return setCredentialsOriginal({github: cred})
 }
 
-module.exports = {getToken, getAuthUrl, getDetails}
+module.exports = {getToken, getAuthUrl, getDetails, setCredentials}

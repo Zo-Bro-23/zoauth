@@ -1,15 +1,19 @@
 # ZoAuth
 
 
+Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and **I** am the sole person behind the whole [ZoAuth](https://zoauth.tk) project. Here's a photo of me:
 
-ZoAuth is an easy to use authentication sdk and library...
-And **this** is the official docs for how to use this beautiful, simple, yet powerful tool. But before we start, I want to acknowledge something. I am so glad that I sat and coded while my friends were playing Fortnite 'coz, well, here I am today! The reason I built ZoAuth was so that authentication would become easy. Something that everyone could do, not just the pros. And I don't **want** others to go through what I went. I want them **not** to suffer. And there's one more thing. If your head is spinning by the time you finish reading this, there's something wrong with you. Blame yourself and not the module. Because unlike most of the docs out there, this one is easy to understand. So don't put all on me.
+<img src= "./readme_files/My\ pic.jpg" height= "512px">
+
+Now that we have established who I am, let's get started...
+
+ZoAuth is an easy to use authentication sdk and library... Feel free to clone our [GitHub](https://github.com/Zo-Bro-23/zoauth) repo and to join in our discussions to share your own tips and tricks... And **this** is the official docs for how to use this beautiful, simple, yet powerful tool. But before we start, I want to acknowledge something. I am so glad that I sat and coded while my friends were playing Fortnite 'coz, well, here I am today! The reason I built ZoAuth was so that authentication would become easy. Something that everyone could do, not just the pros. And I don't **want** others to go through what I went. I want them **not** to suffer. And there's one more thing. If your head is spinning by the time you finish reading this, there's something wrong with you. Blame yourself and not the module. Because unlike most of the docs out there, this one is easy to understand. So don't put all on me.
 
 <img src= "./readme_files/meme-sdk.png" width= "512px">
 
-# Installation
+## Installation
 
-Let's get started. I'm assuming that you have nodeJS installed and a new project set up. If not, go <a href= "https://nodejs.dev/learn">here</a> to learn all about how to get started with node. Now that you've initialized a project, it's time to install my module.
+Let's get started. I'm assuming that you have nodeJS installed and a new project set up. If not, go [here](https://nodejs.dev/learn) to learn all about how to get started with node. Now that you've initialized a project, it's time to install my module.
 ```javascript
 npm i zoauth
 ```
@@ -25,13 +29,17 @@ const zoauth = require('zoauth')
 ```
 And you're done. You can do whatever heck you wanna do! But most people reading this don't know what functions to call, you might say. Well, what is an API Reference there for but that?
 
-# Get Started
+## Demo app
 
-Now let's really get started, write some code, and impress your friends. (or kids, I don't know how old you are)
+Now let's really get started, write some code, and impress your friends. (or kids, I don't know how old you are) But before we do that, I want to guys to see the power of this thing, firsthand. So go ahead and check out the demo web app that I have built using ZoAuth, some basic html, and nothing else. Click [here](https://demo.zoauth.tk) to see the demo app.
+
+Now that you have seen the demo app, I want to show you the code behind it. It's uploaded to GitHub right [here](https://github.com/Zo-Bro-23/zoauth-demoApp), but I'll put it down below just in case. Please feel free to clone the code from GitHub and use it to do whatever you want to do. Like the UI? Did it myself.
+
+I don't really know why I addded this function to the package, but I did. So you can just add the following code to your ```index.js``` to see it work instead if you want to. It's just an https redirect.
 
 ```javascript
 const zoauth = require('zoauth')
-demoApp()
+zoauth.demoApp()
 ```
 And on your terminal,
 
@@ -48,15 +56,16 @@ Saw it? Ok, so I've been obsessed about ASCII art for around a week now. From wh
 
 <img src= "./readme_files/logo.jpg" width= "512px">
 
-Neat huh? Can you even **believe** that it's ASCII and not just a drawing? Ok, sorry! I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And **don't** ask me why I chose that port. It's a goddamn lucky number, man! Like the UI? Here's a photo for the noobs who can't write two lines of code.
+Neat huh? Can you even **believe** that it's ASCII and not just a drawing? I literally **love** the black background! It signifies *class*. Of course, if you were my dad or if you were from the 1800's, you wouldn't like it. I don't know. I'm just ***so*** used to the dark theme. By the way, you should try out the ```Night owl``` theme on ```VS Code```. It's genuinely ***awesome***. Ok, sorry. I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And **don't** ask me why I chose that port. It's a goddamn lucky number, man! Yeah anyway, check out the demo app. Like the UI? Here's a photo for the noobs who can't write two lines of code.
 
 <img src= "./readme_files/screenshot.png">
 
-Now that you no what my module can do, let's really get deep into it.
+Why do I have so many browser extensions? Because I never really bother deleting the ones I never use. It's one of those perks of owning a Ryzen 7. You don't really have to **ever** worry about something going slow. I also never close my browsing tabs. I have *literally* a thousand tabs open right now, ignoring other applications like VS Code. Ok, now that you no what my module can do, let's really get deep into it.
 
-# Example code
+# Tutorial
 
-Ok. Let's start right at the start. What **do** you **really** want to do with OAuth? Sign users in, get access tokens, and call some API's right? Ok. You can do all that and much more with ZoAuth. Here's some example code with an express server. Actually, it's the exact same code that I used for the demo app, except that I used many more companies back there. Now I know what you're going to ask. How can such a simple code do such a complicated task? Simple. Because I made the package.
+Ok. Let's start right at the start. What ***do*** you **really** want to do with OAuth? Sign users in, get access tokens, and call some API's right? Ok. You can do all that and much more with ZoAuth. Here's some example code with an express server. Actually, it's the exact same code that I used for the demo app, except that I used many more companies back there. Now I know what you're going to ask. How can such a simple code do such a complicated task? Simple. Because ***I*** made the package.
+
 ```javascript
 const zoauth = require('zoauth')
 const express = require('express')
@@ -86,3 +95,180 @@ app.listen(5210, () => {console.log(`
 #@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@                          
 `)})
 ```
+
+Want the full reference list of all the possible functions so that you can exploit me to the core? Here we go...
+
+## API reference
+
+### Function list
+
+#### zoauth.setCredentials(cred)
+
+Pass on a ```cred``` JSON object with the credentials in the form of 
+```javascript
+{company1: {
+    client_id: "Blah blah blah",
+    other_details: "In the same format"
+},
+company2: {
+    same_thing: "Come on, man!"
+}}
+```
+
+#### zoauth.getAuthUrl(company, options)
+
+**returns String**
+
+Get the auth url for a ```company``` string parameter with optional ```options``` to add on to the request body. All the ```options``` will get added on as query parameters. See [company list](#supported-companies)
+
+#### zoauth.getToken(company, params, config)
+
+**returns Promise**
+
+Get the ```access_token```, ```refresh_token```, etc. for a ```company``` string parameter along with the ```code``` and other details in the ```params``` object. Extra axios configuration can be added on with the ```config``` parameter. See [company list](#supported-companies)
+
+#### zoauth.getDetails(company, options, config)
+
+**returns Promise**
+
+Same as the ```getToken()```, except that instead of the ```code```, you'll be passing on the tokens. Just pass on the whole object man, nobody really cares. All we want is the ```access_token``` though. Add extra configuration through the ```config``` parameter.
+
+#### zoauth.getApi(url, options, config, except)
+
+**returns Promise**
+
+Pass on a ```url``` with the authorization tokens inside the ```options``` object, and we'll call that API endpoint with the necessary ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token.
+
+#### zoauth.postApi(url, data, options, config, except)
+
+Same thing. We'll call the ```url``` with the ```data``` along with authorization tokens from ```options```, with the ```config```uration. Note: Unless ```except``` is a truthy value, an error will be called if options doesn't contain an access_token.
+
+Now come the fun ones...
+
+#### zoauth.runAuthServer(resolve, reject, port)
+
+Runs a auth server with literally **all** supported companies. It calls the ```resolve``` callback function after the whole auth process. You'll receive the following JSON object as a parameter for this callback function ```r => {console.log(resp)}```:
+
+```javascript
+resp: {
+  data: {"the access and refresh tokens along with other data"},
+  company: "company",
+  responseObject: "an express response object that you can use to resolve the server request",
+  requestObject: "an express request object that you can use to get details about the server request"
+}
+```
+
+If you provide an optional ```reject``` callback function, you'll get a similar object in that function if something goes wrong. The ```data``` object will then contain the ```error``` message along with the ```error_description```. Note: The values inside the ```data``` object may vary according to the company. You can also optionally specify the port After running the server,
+
+```http://localhost:5210/*company*``` redirects the user to the ```company```'s OAuth page and ```http://localhost:5210/callback/*company*``` takes the token from the ```company```'s page and calls the callback with the received data.
+
+#### zoauth.expressApp
+
+If you want to add extra endpoints to the already running ```authServer```, then you can do ```zoauth.expressApp.get([...])``` instead of ```app.get([...])``` to prevent the ```Port already busy``` error.
+
+#### zoauth.demoApp()
+
+That one's easy. Runs the demo app at ```http://localhost:5210```. And don't worry. It doesn't take up any space in the package. Chill, man. I'm definitely ***so*** **not** abusing your broadband whenever you do ```npm i zoauth```. The file just takes up like 8KB. I think I understood why I included this function — so that I can show you the ASCII art. The function just redirects you to the real demo app, which is hosted at [https://demo.zoauth.tk](https://demo.zoauth.tk)
+
+#### zoauth.company.function
+
+This is a different function structure just in case you like it better. Replace ```company``` with the disired company, and replace ```function``` with any one of these four functions:
+
+-setCredentials()
+-getAuthUrl()
+-getToken()
+-getDetails()
+
+### Module presented as a JSON object
+
+```javascript
+const zoauth = require('zoauth)
+```
+
+```javascript
+zoauth === {
+    getAuthUrl: [function],
+    setCredentials: [function],
+    getToken: [function],
+    getDetails: [function],
+    runAuthServer: [function],
+    demoApp: [function],
+    getApi: [function],
+    postApi: [function],
+    expressApp: [object],
+    amazon: {
+        getAuthUrl: [function],
+        setCredentials: [function],
+        getToken: [function],
+        getDetails: [function]
+    },
+    facebook: {
+        getAuthUrl: [function],
+        setCredentials: [function],
+        getToken: [function],
+        getDetails: [function]
+    },
+    discord: {
+        getAuthUrl: [function],
+        setCredentials: [function],
+        getToken: [function],
+        getDetails: [function]
+    },
+    github: {
+        getAuthUrl: [function],
+        setCredentials: [function],
+        getToken: [function],
+        getDetails: [function]
+    },
+    google: {
+        getAuthUrl: [function],
+        setCredentials: [function],
+        getToken: [function],
+        getDetails: [function]
+    },
+    microsoft: {
+        getAuthUrl: [function],
+        setCredentials: [function],
+        getToken: [function],
+        getDetails: [function]
+    }
+}
+```
+
+### Module quick reference
+
+#### zoauth.setCredentials(cred)
+
+##### cred: required
+
+#### zoauth.getAuthUrl(company, options)
+
+##### company: required
+##### options: optional
+
+#### zoauth.getDetails(company, options, config)
+
+##### company: required
+##### options: required
+##### config: optional
+
+#### zoauth.getApi(url, options, config, except)
+
+##### url: required
+##### options: required, unless except is truthy
+##### config: optional
+##### except: optional, unless options.access_token is not specified
+
+#### zoauth.postApi(url, data, options, config, except)
+
+##### url: required
+##### data: required
+##### options: required, unless except is truthy
+##### config: optional
+##### except: optional, unless options.access_token is not specified
+
+#### zoauth.runAuthServer(resolve, reject, port)
+
+##### resolve: required
+##### reject: optional (Note: If an error occurs, unhandled promise rejection will be called)
+##### *hi* ```hi```
