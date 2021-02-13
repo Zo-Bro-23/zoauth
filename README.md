@@ -1,5 +1,12 @@
 # ZoAuth
 
+<img src= "https://img.shields.io/badge/Build-Stable-blue">
+<img src= "https://img.shields.io/badge/Coverage-100%-blue">
+<img src= "https://img.shields.io/badge/Dependencies-Express%2C%20Axios%2C%20NodeMon%2C%20Query-String-blue">
+<img src= "https://img.shields.io/badge/NPM-v14%2E15%2E4-blue">
+<img src= "https://img.shields.io/badge/Downloads-Enough%20for%20you%to%be%happy-blue">
+<img src= "https://img.shields.io/badge/Social%20media-GitHub%20Discussions-blue?logo=github&link=https%3A%2F%2Fgithub.com%2FZo-Bro-23%2Fzoauth%2Fdiscussions">
+
 - [ZoAuth](#zoauth)
   - [Installation](#installation)
   - [Demo app](#demo-app)
