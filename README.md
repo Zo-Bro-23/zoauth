@@ -251,37 +251,37 @@ zoauth === {
 
 #### zoauth.setCredentials(cred)
 
-```##### cred: required```
+##### ``` cred: required```
 
 #### zoauth.getAuthUrl(company, options)
 
-```##### company: required```
-```##### options: optional```
+##### ``` company: required```
+##### ``` options: optional```
 
 #### zoauth.getDetails(company, options, config)
 
-```##### company: required```
-```##### options: required```
-```##### config: optional```
+##### ``` company: required```
+##### ``` options: required```
+##### ``` config: optional```
 
 #### zoauth.getApi(url, options, config, except)
 
-```##### url: required```
-```##### options: required, unless except is truthy```
-```##### config: optional```
-```##### except: optional, unless options.access_token is not specified```
+##### ``` url: required```
+##### ``` options: required, unless except is truthy```
+##### ``` config: optional```
+##### ``` except: optional, unless options.access_token is not specified```
 
 #### zoauth.postApi(url, data, options, config, except)
 
-```##### url: required```
-```##### data: required```
-```##### options: required, unless except is truthy```
-```##### config: optional```
-```##### except: optional, unless options.access_token is not specified```
+##### ``` url: required```
+##### ``` data: required```
+##### ``` options: required, unless except is truthy```
+##### ``` config: optional```
+##### ``` except: optional, unless options.access_token is not specified```
 
 #### zoauth.runAuthServer(resolve, reject, port)
 
-```##### resolve: required```
-```##### reject: optional (Note: If an error occurs, unhandled promise rejection will be called)```
-```##### port: optional```
+##### ``` resolve: required```
+##### ``` reject: optional (Note: If an error occurs, unhandled promise rejection will be called)```
+##### ``` port: optional```
 ##### *hi* ```hi```
