@@ -68,7 +68,7 @@
 
 Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.tk) project. Here's a photo of me:
 
-<img src= "https://zoauth.tk/My%20pic.jpg" height= "512px">
+<img src= "https://zoauth.tk/My%20pic.jpg" width= "100%">
 
 Now that we have established who I am, let's get started...
 
@@ -157,7 +157,7 @@ app.listen(5210, () => {console.log(`
     @@@             @@           @@                          
   @@@               @@    @@@    @@                          
 @@@@@@@@@@@@@@@@@@  @@     @     @@                          
-#@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@                          
+@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@@@                          
 `)})
 ```
 
