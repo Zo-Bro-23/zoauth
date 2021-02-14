@@ -61,7 +61,7 @@ async function runAuthServer(resolve, reject, port = 5210) {
                 if (error) {
                     reject({
                         company: 'amazon',
-                        error: r,
+                        error: err,
                         responseObject: resp,
                         requestObject: req
                     })
@@ -85,7 +85,7 @@ async function runAuthServer(resolve, reject, port = 5210) {
                 if (error) {
                     reject({
                         company: 'discord',
-                        error: r,
+                        error: err,
                         responseObject: resp,
                         requestObject: req
                     })
@@ -109,7 +109,7 @@ async function runAuthServer(resolve, reject, port = 5210) {
                 if (error) {
                     reject({
                         company: 'facebook',
-                        error: r,
+                        error: err,
                         responseObject: resp,
                         requestObject: req
                     })
@@ -137,7 +137,7 @@ async function runAuthServer(resolve, reject, port = 5210) {
                 if (error) {
                     reject({
                         company: 'github',
-                        error: r,
+                        error: err,
                         responseObject: resp,
                         requestObject: req
                     })
@@ -161,7 +161,7 @@ async function runAuthServer(resolve, reject, port = 5210) {
                 if (error) {
                     reject({
                         company: 'google',
-                        error: r,
+                        error: err,
                         responseObject: resp,
                         requestObject: req
                     })
@@ -185,7 +185,7 @@ async function runAuthServer(resolve, reject, port = 5210) {
                 if (error) {
                     reject({
                         company: 'microsoft',
-                        error: r,
+                        error: err,
                         responseObject: resp,
                         requestObject: req
                     })
