@@ -6,6 +6,12 @@
 
 <a href= ""><img src= "https://img.shields.io/badge/Build-Stable-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Coverage-100%25%0A-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Dependencies-Express%2C%20Axios%2C%20NodeMon%2C%20QueryString-blue"></a>  <a href= "https://www.npmjs.com/package/zoauth"><img src= "https://img.shields.io/badge/NPM-v14%2E15%2E4-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Downloads-Enough%20for%20you%20to%20be%20happy-blue"></a>  <a href= "https://github.com/Zo-Bro-23/zoauth/discussions/"> <img src= "https://img.shields.io/badge/Social%20media-GitHub%20Discussions-blue?logo=github"></a>
 
+Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.tk) project. Here's a photo of me:
+
+<img src= "https://zoauth.tk/My%20pic.jpg" width= "650px">
+
+Now that we have established who I am, let's get started...
+
 - [ZoAuth](#zoauth)
   - [Installation](#installation)
   - [Demo app](#demo-app)
@@ -65,14 +71,7 @@
     - [GitHub](#github)
     - [Microsoft](#microsoft)
 
-
-Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.tk) project. Here's a photo of me:
-
-<img src= "https://zoauth.tk/My%20pic.jpg" width= "650px">
-
-Now that we have established who I am, let's get started...
-
-ZoAuth is an easy to use authentication sdk and library... Feel free to clone our GitHub [repo](https://github.com/Zo-Bro-23/zoauth) and to join in our discussions to share your own tips and tricks... And ***this*** is the official docs for how to use this beautiful, simple, yet powerful tool. But before we start, I want to acknowledge something. I am so glad that I sat and coded while my friends were playing Fortnite, 'coz, well, here I am today! The reason I built ZoAuth was so that authentication would become easy. Something that everyone could do, not just the pros. And I don't ***want*** others to go through what I went through to get started with OAuth. You need to first find the proper documentation — and this took atleast half-an-hour — then you had to try and get it to work. I want others to ***not*** suffer. And there's one more thing. If your head is spinning by the time you finish reading this, there's something wrong with you. Blame yourself and not the module. Because unlike most of the docs out there, this one is easy to understand. So don't put all on me.
+ZoAuth is an easy to use authentication sdk and library... It intergrates many OAuth services like Facebook, Google, Microsoft, etc. and makes it really easy to implement OAuth. I swear, two lines of code and you're done. Feel free to clone our GitHub [repo](https://github.com/Zo-Bro-23/zoauth) and to join in our discussions to share your own tips and tricks... And ***this*** is the official docs for how to use this beautiful, simple, yet powerful tool. But before we start, I want to acknowledge something. I am so glad that I sat and coded while my friends were playing Fortnite, 'coz, well, here I am today! The reason I built ZoAuth was so that authentication would become easy. Something that everyone could do, not just the pros. And I don't ***want*** others to go through what I went through to get started with OAuth. You need to first find the proper documentation — and this took atleast half-an-hour — then you had to try and get it to work. I want others to ***not*** suffer. And there's one more thing. If your head is spinning by the time you finish reading this, there's something wrong with you. Blame yourself and not the module. Because unlike most of the docs out there, this one is easy to understand. So don't put all on me.
 
 <img src= "https://zoauth.tk/meme-sdk.png" width= "512px">
 
