@@ -189,8 +189,8 @@ async function getToken(company, params, config) {
     if (functions[company] == undefined) {
         throw `Err!! ${company.charAt(0).toUpperCase() + company.slice(1)} isn't a valid company dumbass! If it is a valid company instead, pls visit https://github.com/Zo-Bro-23/zoauth/issues/new to give us feedback on which OAuth services to incooperate in the next update.`
     }
-    if (params.code == undefined) {
-        throw `Err!! Gimme a code genius!`
+    if (params == undefined) {
+        throw `Err!! Gimme some params, genius!`
     }
     return functions[company](params, config)
 }
