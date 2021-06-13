@@ -1,14 +1,14 @@
 # ZoAuth
 
-<img src= "https://zoauth.tk/ZoAuth%20logo%20color%20changed%20resized.jpg">
+<img src= "https://zoauth.zohan.tech/ZoAuth%20logo%20color%20changed%20resized.jpg">
 
 <a href= "https://www.npmjs.com/package/zoauth"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/800px-Npm-logo.svg.png" width= "100px"></a>
 
 <a href= ""><img src= "https://img.shields.io/badge/Build-Stable-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Coverage-100%25%0A-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Dependencies-Express%2C%20Axios%2C%20NodeMon%2C%20QueryString-blue"></a>  <a href= "https://www.npmjs.com/package/zoauth"><img src= "https://img.shields.io/badge/NPM-v14%2E15%2E4-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Downloads-Enough%20for%20you%20to%20be%20happy-blue"></a>  <a href= "https://github.com/Zo-Bro-23/zoauth/discussions/"> <img src= "https://img.shields.io/badge/Social%20media-GitHub%20Discussions-blue?logo=github"></a>
 
-Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.tk) project. Here's a photo of me:
+Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.zohan.tech) project. Here's a photo of me:
 
-<img src= "https://zoauth.tk/My%20pic.jpg" width= "650px">
+<img src= "https://zoauth.zohan.tech/My%20pic.jpg" width= "650px">
 
 Now that we have established who I am, let's get started...
 
@@ -73,7 +73,7 @@ Now that we have established who I am, let's get started...
 
 ZoAuth is an easy to use authentication sdk and library... It intergrates many OAuth services like Facebook, Google, Microsoft, etc. and makes it really easy to implement OAuth. I swear, two lines of code and you're done. Feel free to clone our GitHub [repo](https://github.com/Zo-Bro-23/zoauth) and to join in our discussions to share your own tips and tricks... And ***this*** is the official docs for how to use this beautiful, simple, yet powerful tool. But before we start, I want to acknowledge something. I am so glad that I sat and coded while my friends were playing Fortnite, 'coz, well, here I am today! The reason I built ZoAuth was so that authentication would become easy. Something that everyone could do, not just the pros. And I don't ***want*** others to go through what I went through to get started with OAuth. You need to first find the proper documentation — and this took atleast half-an-hour — then you had to try and get it to work. I want others to ***not*** suffer. And there's one more thing. If your head is spinning by the time you finish reading this, there's something wrong with you. Blame yourself and not the module. Because unlike most of the docs out there, this one is easy to understand. So don't put all on me.
 
-<img src= "https://zoauth.tk/meme-sdk.png" width= "512px">
+<img src= "https://zoauth.zohan.tech/meme-sdk.png" width= "512px">
 
 ## Installation
 
@@ -95,7 +95,7 @@ And you're done. You can do whatever heck you wanna do! But most people reading 
 
 ## Demo app
 
-Now let's really get started, write some code, and impress your friends. (or kids, I don't know how old you are) But before we do that, I want to guys to see the power of this thing, firsthand. So go ahead and check out the demo web app that I have built using ZoAuth, some basic html, and nothing else. Click [here](https://demo.zoauth.tk) to see the demo app.
+Now let's really get started, write some code, and impress your friends. (or kids, I don't know how old you are) But before we do that, I want to guys to see the power of this thing, firsthand. So go ahead and check out the demo web app that I have built using ZoAuth, some basic html, and nothing else. Click [here](https://demo.zoauth.zohan.tech) to see the demo app.
 
 Now that you have seen the demo app, I want to show you the code behind it. It's uploaded to GitHub right [here](https://github.com/Zo-Bro-23/zoauth-demoApp), but I also added it as a function to the module, just in case. Please feel free to clone the code from GitHub and use it to do whatever you want to do. Like the UI? Did it myself.
 
@@ -118,11 +118,11 @@ And how did you like ***that***, huh? I'm not gonna spoil the surprise for you. 
 
 Saw it? Ok, so I've been obsessed about ASCII art for around a week now. From when I was a kid, I ***loved*** it. It never occured to me to try making it. I always wanted to leave it to the experts. But then I realised a few days back that there would be websites that do this. And there was. Damn good sites. Check this out.
 
-<img src= "https://zoauth.tk/logo.jpg" width= "512px">
+<img src= "https://zoauth.zohan.tech/logo.jpg" width= "512px">
 
 Neat huh? Can you even ***believe*** that it's ASCII and not just a drawing? I literally ***love*** the black background! It signifies ***class***. Of course, if you were my dad or if you were from the 1800's, you wouldn't like it. I don't know why, but I'm just ***so*** used to the dark theme. By the way, you should try out the ```Night owl``` theme on ```VS Code```. It's genuinely ***awesome***. Thought I should give them some credit. Ok, sorry. I was getting distracted. Back to the point. Yeah open up your browser and go to ```http://localhost:5210```. And ***don't*** ask me why I chose that port. It's a ***goddamn*** lucky number, man! Yeah anyway, check out the demo app. See what I meant earlier when I talked about the UI? Here's a photo for the noobs who can't even bother write two lines of code.
 
-<img src= "https://zoauth.tk/screenshot.png">
+<img src= "https://zoauth.zohan.tech/screenshot.png">
 
 Why do I have so many browser extensions? Because I never really bother deleting the ones I never use. It's one of those perks of owning a Ryzen 7. You don't really have to ***ever*** worry about something going slow. I also never close my browsing tabs. I have ***literally*** a thousand tabs open right now, without counting other applications like ```VS Code```. Ok, now that you no what my module can do, let's really get deep into it.
 
@@ -162,7 +162,7 @@ app.listen(5210, () => {console.log(`
 
 Go to ```http://localhost:5210``` and try logging in with Google. Don't know your password? Never mind. Click ```forgot password```. Wait, what?? You don't know the answer to ***any*** of your security questions? How ***is*** that possible???
 
-<img src= "https://zoauth.tk/meme-login-oauth-version.png" width= "512 px">
+<img src= "https://zoauth.zohan.tech/meme-login-oauth-version.png" width= "512 px">
 
 Ok. Now ***do*** you want the full reference list of all the possible functions so that you can exploit me to the core? Here we go...
 
@@ -246,7 +246,7 @@ If you want to add extra endpoints to the already running ```authServer```, then
 
 ***```returns null```***
 
-That one's easy. Runs the demo app at ```http://localhost:5210```. And don't worry. It doesn't take up any space in the package. Chill, man. I'm definitely ***so*** ***not*** abusing your broadband whenever you do ```npm i zoauth```. The file just takes up like 8KB. I think I understood why I included this function — so that I can show you the ASCII art. The function just redirects you to the real demo app, which is hosted at [https://demo.zoauth.tk](https://demo.zoauth.tk)
+That one's easy. Runs the demo app at ```http://localhost:5210```. And don't worry. It doesn't take up any space in the package. Chill, man. I'm definitely ***so*** ***not*** abusing your broadband whenever you do ```npm i zoauth```. The file just takes up like 8KB. I think I understood why I included this function — so that I can show you the ASCII art. The function just redirects you to the real demo app, which is hosted at [https://demo.zoauth.zohan.tech](https://demo.zoauth.zohan.tech)
 
 #### zoauth.company.function
 
