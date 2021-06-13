@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 async function demoApp() {
     app.get('/', (req, resp) => {
-        resp.sendFile('index.html', {
+        resp.sendFile('demo.html', {
             root: __dirname
         })
     })
