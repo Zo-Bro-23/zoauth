@@ -1,11 +1,16 @@
 {
   "name": "zoauth",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "An easy to use authentication module... I swear, two lines of code and you're done.",
   "main": "index.js",
   "homepage": "https://github.com/Zo-Bro-23/zoauth#readme",
-  "bugs": {"url": "https://github.com/Zo-Bro-23/zoauth/issues", "email": "zohan.subhash@gmail.com"},
-  "publishConfig": {"tag": "latest"},
+  "bugs": {
+    "url": "https://github.com/Zo-Bro-23/zoauth/issues",
+    "email": "zohan.subhash@gmail.com"
+  },
+  "publishConfig": {
+    "tag": "latest"
+  },
   "scripts": {
     "test": "nodemon index.js"
   },
