@@ -37,5 +37,3 @@ module.exports = {
     demoApp,
     expressApp
 }
-
-console.log('testing')
