@@ -1,5 +1,7 @@
 # ZoAuth
 
+*Zero effort OAuth - ZoAuth!*
+
 <img src= "https://zoauth.zohan.tech/ZoAuth%20logo%20color%20changed%20resized.jpg">
 
 <a href= "https://www.npmjs.com/package/zoauth"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/800px-Npm-logo.svg.png" width= "100px"></a>
