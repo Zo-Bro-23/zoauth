@@ -8,6 +8,8 @@
 
 <a href= ""><img src= "https://img.shields.io/badge/Build-Stable-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Coverage-100%25%0A-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Dependencies-Express%2C%20Axios%2C%20NodeMon%2C%20QueryString-blue"></a>  <a href= "https://www.npmjs.com/package/zoauth"><img src= "https://img.shields.io/badge/NPM-v14%2E15%2E4-blue"></a>  <a href= ""><img src= "https://img.shields.io/badge/Downloads-Enough%20for%20you%20to%20be%20happy-blue"></a>  <a href= "https://github.com/Zo-Bro-23/zoauth/discussions/"> <img src= "https://img.shields.io/badge/Social%20media-GitHub%20Discussions-blue?logo=github"></a>
 
+Wanna see ZoAuth live in action? Check the [demo app](http://demo.zoauth.zohan.tech) out!
+
 Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.zohan.tech) project. Here's a photo of me:
 
 <img src= "https://zoauth.zohan.tech/My%20pic.jpg" width= "650px">
