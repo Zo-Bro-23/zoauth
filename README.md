@@ -10,9 +10,7 @@
 
 *Wanna see ZoAuth live in action? Check the [demo app](http://demo.zoauth.zohan.tech) out!*
 
-Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.zohan.tech) project. Here's a photo of me:
-
-<img src= "https://zoauth.zohan.tech/My%20pic.jpg" width= "650px">
+Hi! I'm Zohan Subhash and I'm a twelve-year-old, not to say that I'm much proud of that fact. I love to code and ***I*** am the sole person behind the whole [ZoAuth](https://zoauth.zohan.tech) project.
 
 Now that we have established who I am, let's get started...
 
