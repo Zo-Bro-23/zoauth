@@ -1,6 +1,6 @@
 {
   "name": "zoauth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zero effort OAuth - ZoAuth!",
   "main": "index.js",
   "homepage": "https://github.com/Zo-Bro-23/zoauth#readme",
