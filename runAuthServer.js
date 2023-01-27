@@ -46,6 +46,19 @@ async function runAuthServer(resolve, reject, port = 5210) {
     })
 
     expressApp.get('/callback/amazon', (req, resp) => {
+        if (!req.query.code) {
+            if (error) {
+                reject({
+                    company: 'amazon',
+                    error: 'An error occured. Please try again.',
+                    responseObject: resp,
+                    requestObject: req
+                })
+            }
+            
+            return
+        }
+        
         getToken('amazon', {
                 code: req.query.code
             })
@@ -70,6 +83,19 @@ async function runAuthServer(resolve, reject, port = 5210) {
     })
 
     expressApp.get('/callback/discord', (req, resp) => {
+        if (!req.query.code) {
+            if (error) {
+                reject({
+                    company: 'discord',
+                    error: 'An error occured. Please try again.',
+                    responseObject: resp,
+                    requestObject: req
+                })
+            }
+            
+            return
+        }
+        
         getToken('discord', {
                 code: req.query.code
             })
@@ -94,6 +120,19 @@ async function runAuthServer(resolve, reject, port = 5210) {
     })
 
     expressApp.get('/callback/facebook', (req, resp) => {
+        if (!req.query.code) {
+            if (error) {
+                reject({
+                    company: 'facebook',
+                    error: 'An error occured. Please try again.',
+                    responseObject: resp,
+                    requestObject: req
+                })
+            }
+            
+            return
+        }
+        
         getToken('facebook', {
                 code: req.query.code
             })
@@ -118,6 +157,19 @@ async function runAuthServer(resolve, reject, port = 5210) {
     })
 
     expressApp.get('/callback/github', (req, resp) => {
+        if (!req.query.code) {
+            if (error) {
+                reject({
+                    company: 'github',
+                    error: 'An error occured. Please try again.',
+                    responseObject: resp,
+                    requestObject: req
+                })
+            }
+            
+            return
+        }
+        
         getToken('github', {
                 code: req.query.code
             }, {
@@ -146,6 +198,19 @@ async function runAuthServer(resolve, reject, port = 5210) {
     })
 
     expressApp.get('/callback/google', (req, resp) => {
+        if (!req.query.code) {
+            if (error) {
+                reject({
+                    company: 'google',
+                    error: 'An error occured. Please try again.',
+                    responseObject: resp,
+                    requestObject: req
+                })
+            }
+            
+            return
+        }
+        
         getToken('google', {
                 code: req.query.code
             })
@@ -170,6 +235,19 @@ async function runAuthServer(resolve, reject, port = 5210) {
     })
 
     expressApp.get('/callback/microsoft', (req, resp) => {
+        if (!req.query.code) {
+            if (error) {
+                reject({
+                    company: 'microsoft',
+                    error: 'An error occured. Please try again.',
+                    responseObject: resp,
+                    requestObject: req
+                })
+            }
+            
+            return
+        }
+        
         getToken('microsoft', {
                 code: req.query.code
             })
